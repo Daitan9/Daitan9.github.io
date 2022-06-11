@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <title>C'est même plus des profs à ce point</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="profs.css">
+    <link rel="icon" href="icon.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Asap:wght@501&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+    </style>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    
+</head>
+
+<body>
+    
+        <div id="home"></div>
+        <div class="header">
+            <ul id="conteneur">
+                <li class="accueil">
+                    <a class="home" href="..\index.html">
+                        <img src="images\home.png" style="vertical-align:middle" class="icon">
+                        <span>Accueil</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://euw.op.gg/summoners/euw/Daitan9" class="moilol">
+                        <img src="images\lol.jpg" style="vertical-align:middle" class="icon">
+                        <span>Moi sur LoL
+                    </span>
+                </a>
+                </li>
+                <li>
+                    <a href="profs.html">
+                        <img src="images\Profs.png" style="vertical-align: middle;" class="icon">
+                        <span>
+                            Nos chers profs
+                        </span>
+                    </a>
+                </li>
+                <li class="Actu-btn">
+                    <a href="#">
+                        <img src="images/actu-icon.png" alt="" class="icon">
+                        <button id="actu-toggle" class="actu-toggle" style="background:none; border: none;cursor: pointer;" onclick="show_popup()">
+                            <span>
+                                Actualités
+                            </span>
+                        </button>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images\discordicon.png" style="vertical-align:middle" class="icon">
+                        <button style="background:none; border: none;cursor: pointer;" onclick="Discord()" class="discord">
+                            <span>
+                                Contact Discord
+                            </span>
+                        </button>
+                    </a>
+                </li>
+                <li class="propos">
+                    <a href="propos.html"><span>À propos du site
+                    </span>
+                </a>
+                </li>
+                <li class="ld-mode">
+                    <a href="#">
+                        <button id="dark-mode-toggle" class="dark-mode-toggle" style="background:none; border: none;">
+                            <img src="images/ld-icon.png" class="icon">
+                        </button>
+                    </a>
+                </li>
+                <li class="herr">
+                    <a href="https://beta.louis-herr.fr/">
+                        <img src="images/herr-icon.png" alt="" class="icon">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="popup">
+            <div class="top-tx" style="text-align: center;">
+                <h2 class="actu-title">
+                    Actualités du 22/04 ! <button id="closing-btn" class="popup-btn"  onclick="close_popup()" >
+                        <img src="images/close-cross.png" alt="">
+                    </button>
+                </h2>
+                <h2 style="padding: 25px;">
+                    Porco Rosso c'est super, voilà merci au revoir. <br>
+                    Sérieusement, la relation Fio - Porco est juste trop cool à suivre et le fait que ce soit un porc, ben ça intrigue tout au long du film; <br>
+                    On se demande pourquoi et comment il peut y remédier "Ce qui marche pour les grenouilles ne marche pas forcément pour les cochons." <br>
+                    Je pense qu'il mérite sa place sur le podium des Ghiblis !
+                </h2>
+                <img src="gif/porco-thumbsup.gif" alt="" style="padding: 10px;border-radius: 4%;"> <br>
+
+                <img src="gif/fio-thumbsup.gif" alt="" style="padding: 10px;border-radius: 5%;">
+                <h2 style="padding: 15px;">
+                    Prochains Ghiblis : Pompoko et Princesse Mononoke
+                </h2>
+                
+            </div>
+        </div>
+
+        <div id="title">
+            <h1 class="title" style="text-align: center;">
+                Nos chers profs adorés
+            </h1>
+        </div>
+
+
+        <div id="content">
+            <div class="leftbox">
+                <h1>
+                   <p>Notre prof de SNT national qui cosplay Teemo</p>   
+                </h1>
+                <img src="images/Herr.png" class="bg">
+                <h1>
+                    <p style="margin-top: 40px;">
+                        Mr. Herr challenger du tournoi de tennis de table, 2010
+                    </p>
+                </h1>
+                <img src="images\Herr2.png" class="bg">
+                <h2 class="defi">
+                    <p>
+                        Je vous prend quand vous voulez au Tennis de table Mr.
+                    </p>
+                    
+                </h2>
+            </div>
+
+            <div class="rightbox">
+                <h1>
+                    <p>Mr. Faille le bg</p>
+                </h1>
+                <img src="images\faille-uwu.png" class="faille">
+                <h1 style="margin-top: 30px;">
+                    <p>Mme Didelon, juste Mme Didelon. Alias Les Ghibli c'est cool</p>
+                </h1>
+                <img src="images/waifu-nanmdrjedeconnecestbon.jpg" alt="">
+                <h2 class="defi">
+                    You will be remembered for ages Madame (￣^￣)ゞ
+                </h2>
+                <h2 class="defi-2">
+                    (surtout dans la mesure ou le mot ghibli vous est associé, <br> ça vas pas être facile de vous oublier )
+                </h2>
+            </div>
+        </div>
+
+        <footer id="footer" style="display:flex; justify-content: space-around";>
+            <div>
+                <p>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Fan-fiction Mr. Herr et Mme Didelon WTFF</a>
+                </p>
+            </div>
+
+            <div>
+                <p>
+                    Bas de page extrêmement mal codé.
+                </p>
+            </div>
+
+            <div >
+                <p>
+                    Mais worth quand même si vous avez aimé (grand dieu je fais quoi de ma vie)
+                </p>
+            </div>
+            
+        </footer>
+    
+<script src="index.js"></script>
+
+</body>
