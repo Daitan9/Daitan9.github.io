@@ -339,6 +339,23 @@ div#content{
 }
 
 .rightbox img{
+    transition: 0.3s;
+    box-shadow: 0px 0px 6px black;
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 280%;
+}
+.rightbox img:hover{
+    transition: 0.2s;
+    box-shadow: 0px 0px 10px black;
+}
+
+.darkmode .rightbox img{
+    transition: 0.3s;
+    box-shadow: 0px 0px 16px black;
     border-radius: 8px;
     display: block;
     margin-left: auto;
@@ -347,10 +364,9 @@ div#content{
     max-width: 280%;
 }
 
-
-
-
-
+.slideshow-container{
+    width: 70% !important;
+}
 
 .mySlides {
     text-align: center;
@@ -367,13 +383,15 @@ div#content{
     color: #2E3440;
     font-weight: bold;
     font-size: 14px;
-    transition: 0.3s;
+    transition: 0.2s;
     border-radius: 9px;
     user-select: none;
     background-color: #E5E9F0;
+    box-shadow: 0px 0px 4px black;
   }
 
 .prev:hover, .next:hover {
+    border-radius: 12px;
     color: #2E3440;
     background-color: #ECEFF4;
     box-shadow: 0px 0px 8px black;
@@ -384,8 +402,10 @@ div#content{
 .next{
     margin-left: 15px;
 }
-
-
+.prev:active, .next:active{
+    transition: 0.1s;
+    color: #BF616A;
+}
 
 
 footer{
