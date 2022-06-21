@@ -4,13 +4,45 @@
   <meta charset="utf-8">
   <title>Titre de la page</title>
   <link rel="stylesheet" href="scooby-doo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
   <script src="script.js"></script>
 </head>
 <body>
-  <pre>
-    <output>
-      Welcome back user /-{24_601} ...
-    </output>
-  </pre>
+
+  <p id="1">Welcome back user {24_601}.</p>
+
+  <button onclick="typeWriter()" id="button">Initialize</button>
+
+  <p id="2"></p>
+
+  <p id="3"></p>
+
+  
 </body>
+
+<script>
+  var a = 0;
+  var b = 0;
+  var txt1 = 'Initializing bootloader from external memory /dev/sda1/00X101 ...';
+  var txt2 = 'System state [Started] | Problem [Unsolved] | Filepath [Unknown]';
+  var speed = 170;
+  
+  function typeWriter() {
+    if (a < txt1.length) {
+      document.getElementById("2").innerHTML += txt1.charAt(a);
+      a++;
+      setTimeout(typeWriter, speed);
+      document.getElementById('button').style.display = 'none';
+    }
+
+    if (b < txt2.length) {
+      document.getElementById("3").innerHTML += txt2.charAt(b);
+      b++;
+      setTimeout(typeWriter, speed);
+    }
+  }
+</script>
+
 </html>
