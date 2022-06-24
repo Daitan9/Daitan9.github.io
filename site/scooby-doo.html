@@ -11,38 +11,54 @@
 </head>
 <body>
 
-  <p id="1">Welcome back user {24_601}.</p>
+  <h2 id="1">Welcome back user {24_601}.</h2>
 
-  <button onclick="typeWriter()" id="button">Initialize</button>
+  <button onclick="typewriter()" id="button">Initialize</button>
 
-  <p id="2"></p>
-
-  <p id="3"></p>
-
-  
+  <div>
+    <h3 id="tw1"></h3>
+  </div>
 </body>
 
 <script>
-  var a = 0;
-  var b = 0;
-  var txt1 = 'Initializing bootloader from external memory /dev/sda1/00X101 ...';
-  var txt2 = 'System state [Started] | Problem [Unsolved] | Filepath [Unknown]';
-  var speed = 170;
-  
-  function typeWriter() {
-    if (a < txt1.length) {
-      document.getElementById("2").innerHTML += txt1.charAt(a);
-      a++;
-      setTimeout(typeWriter, speed);
-      document.getElementById('button').style.display = 'none';
-    }
-
-    if (b < txt2.length) {
-      document.getElementById("3").innerHTML += txt2.charAt(b);
-      b++;
-      setTimeout(typeWriter, speed);
-    }
+  // set up text to print, each item in array is new line
+var aText = new Array(
+"Initializing bootloader  ...", 
+"System state : [Started] | Problem [Unsolved] | Filepath [Unknown]", "",
+"{Problem}--> J'ai créé les quatre saisons, mais je ne suis ni la nature, ni la Terre"
+);
+var iSpeed = 120; // time delay of print out
+var iIndex = 0; // start printing array at this posision
+var iArrLength = aText[0].length; // the length of the text array
+var iScrollAt = 20; // start scrolling up at this many lines
+ 
+var iTextPos = 0; // initialise text position
+var sContents = ''; // initialise contents variable
+var iRow; // initialise current row
+ 
+function typewriter()
+{
+ document.getElementById('button').style.display = 'none';
+ sContents =  ' ';
+ iRow = Math.max(0, iIndex-iScrollAt);
+ var destination = document.getElementById("tw1");
+ 
+ while ( iRow < iIndex ) {
+  sContents += aText[iRow++] + '<br />';
+ }
+ destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+ if ( iTextPos++ == iArrLength ) {
+  iTextPos = 0;
+  iIndex++;
+  if ( iIndex != aText.length ) {
+   iArrLength = aText[iIndex].length;
+   setTimeout("typewriter()", 500);
   }
+ } else {
+  setTimeout("typewriter()", iSpeed);
+ }
+}
+
 </script>
 
 </html>
