@@ -29,14 +29,14 @@ pre {
     margin: 0;
 }
 
-button#button{
+button.button{
     background-color: #A3BE8C;
     font-family: 'Kdam Thmor Pro',sans-serif;
     font-size: 75%;
     cursor: default;
 }
 
-button#button:hover{
+button.button:hover{
     cursor: pointer;
     background-color: #ccddbd;
     box-shadow: black 0px 0px 12px ;
