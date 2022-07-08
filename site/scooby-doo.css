@@ -32,7 +32,7 @@ pre {
 button.button{
     background-color: #A3BE8C;
     font-family: 'Kdam Thmor Pro',sans-serif;
-    font-size: 75%;
+    font-size: 82%;
     cursor: default;
 }
 
@@ -40,4 +40,13 @@ button.button:hover{
     cursor: pointer;
     background-color: #ccddbd;
     box-shadow: black 0px 0px 12px ;
+}
+
+button#accueil{
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    font-size: 70%;
 }
