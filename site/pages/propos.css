@@ -16,8 +16,11 @@ body /* mise en place de la police et de la couleur du fond de page*/
     width: 100%;
     color: #2E3440;
     font-family: Calibri, sans-serif;
-    background-image: url("l-backg.png");
-    background-repeat: no-repeat;
+    background: linear-gradient(-45deg, #ECEFF4, #88C0D0, #81A1C1, #5E81AC, #BF616A, #D08770, #EBCB8B, #E5E9F0, #ECEFF4);
+    background-size: 300% 300%;
+    animation: gradient 15s steps(1000, end) forwards infinite;
+    /* background-image: url("l-backg.png");
+    background-repeat: no-repeat; */
 }
 
 @keyframes gradient {
@@ -32,7 +35,7 @@ body /* mise en place de la police et de la couleur du fond de page*/
     }
 }
 .darkmode {
-    background-image: url("d-backg.png");
+    /* background-image: url("d-backg.png"); */
     color: #ECEFF4;
 }
 
@@ -93,7 +96,7 @@ button.popup-btn{
     border: none;
     cursor: pointer;
     border-radius: 2px;
-    transition: 0.3s all;
+    transition: 0.4s all;
 }
 
 button.discord{
@@ -125,7 +128,7 @@ li a {
 }
 li a:hover{
     background-color: #ffffff;
-    transition: 0.3s all;
+    transition: 0.4s all;
 }
 .darkmode li a:hover{
     background-color: #2c2f36;
@@ -143,7 +146,7 @@ li.propos{
 
 
 a img.icon{
-    transition: 0.3s all;
+    transition: 0.4s all;
     margin: 0;
     margin-right: 5px;
     padding: 0;
@@ -154,7 +157,7 @@ a img.icon{
 }
 
 .darkmode a img.icon{
-    transition: 0.3s all;
+    transition: 0.4s all;
     filter: invert(1);
 }
 /* enlèvement de la margin de l'icone light/dark car inadapté */
@@ -182,7 +185,7 @@ a img.icon{
 
 
 #content{
-    transition: 0.3s all;
+    transition: 0.4s all;
     text-align: center;
     width: 90%;
     max-width: 90%;
@@ -195,7 +198,7 @@ a img.icon{
 
 }
 .darkmode #content{
-    transition: 0.3s all;
+    transition: 0.4s all;
     color: #ECEFF4;
 }
 .Ttx{
@@ -237,6 +240,7 @@ a img.icon{
     backdrop-filter: blur(5px);
     color: #ECEFF4;
 }
+
 
 /* 
 
@@ -352,12 +356,12 @@ h2 .img1{
     border-radius: 8px;
     filter: none;
     overflow-y: scroll;
-    transition: 0.3s all;
+    transition: 0.4s all;
     padding: 10px;
     background: rgba(236, 239, 244, 0.95);
     backdrop-filter: blur(5px);
     display: none;
-    transition: 0.3s all;
+    transition: 0.4s all;
     text-align: center;
     position: fixed;
     z-index:98;
@@ -429,16 +433,16 @@ button.popup-btn img:not(:hover) {
 button.popup-btn img{
     filter: invert(0);
     width: 22px;
-    transition: 0.3s all;
+    transition: 0.4s all;
 }
 
 .darkmode button.popup-btn img{
-    transition: 0.3s all;
+    transition: 0.4s all;
     filter: invert(1);
 }
 
 button.send{
-    transition: 0.3s all;
+    transition: 0.4s all;
     margin: 15px;
     width: 70px;
     height: 35px;
@@ -455,7 +459,7 @@ button.send{
 }
 button.send:hover{
     background: #5E81AC;
-    transition: 0.3s all;
+    transition: 0.4s all;
     box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.8);
 }
 textarea{
@@ -466,7 +470,7 @@ textarea{
 
 
 button.discordo{
-    transition: 0.3s all;
+    transition: 0.4s all;
     padding: 8px;
     margin: 15px;
     border: 0;
@@ -482,7 +486,7 @@ button.discordo{
 }
 button.discordo:hover{
     background: #5E81AC;
-    transition: 0.3s all;
+    transition: 0.4s all;
     box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.8);
 }
 
@@ -520,12 +524,12 @@ div#image{
     border-radius: 8px;
     filter: none;
     overflow-y: scroll;
-    transition: 0.3s all;
+    transition: 0.4s all;
     padding: 10px;
     background: rgba(236, 239, 244, 0.95);
     backdrop-filter: blur(5px);
     display: none;
-    transition: 0.3s all;
+    transition: 0.4s all;
     text-align: center;
     position: fixed;
     z-index:98;
