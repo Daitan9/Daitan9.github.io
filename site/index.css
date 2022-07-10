@@ -135,7 +135,7 @@ li a:hover{
     transition: 0.4s all;
     background-color: #2c2f36;
 }
-li.ld-mode, li.propos, li.herr{
+li.ld-mode, li.propos, li.herr, li.admin{
     float: right;
 }
 li.accueil{
