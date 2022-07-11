@@ -50,18 +50,33 @@ a.link:hover{
 }
 
 img{
-    width: 12px;
-    height: 12px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 26px;
+    height: 26px;
+    transition: 0.3s;
 }
-
-a.loading{
+img:hover{
+    animation: grow 0.4s forwards;
+}
+img:not(:hover){
+    animation: ungrow 0.4s forwards;
+}
+@keyframes grow {
+    from{width: 26px;height: 26px;}
+    to{width: 22px;height: 22px;}
+}
+@keyframes ungrow {
+    from{width: 22px;height: 22px;}
+    to{width: 26px;height: 26px;}
+}
+/* a.loading{
     float: right;
     margin-right: 10px;
-}
+} */
 
 h2::before{
     font-size: 100%;
     content: "Retourner à l'accueil";
 }
-
-
