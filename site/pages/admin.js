@@ -12,6 +12,11 @@ $(document).ready(function () {
       if (ValidEmail === true && ValidPassword === true) {
         // if ValidEmail & ValidPassword
         $(".valid").css("display", "block");
+
+        localStorage.setItem('adminaccess', 'yes');
+
+
+
         window.location = "https://google.com"; // go to home.html
       } else {
         $(".error").css("display", "block"); // show error msg

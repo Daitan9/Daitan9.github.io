@@ -1,0 +1,555 @@
+/* Début du CSS */
+
+/* Base sans marges ni padding  pour tout dans la page */
+*   {
+    margin: 0;
+    padding: 0;
+}
+html{
+    display: none;
+    height: 100%;
+    margin: 0;
+    filter: none;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-align: center;
+}
+
+body /* mise en place de la police et de la couleur du fond de page*/
+{
+    height: 100%;
+    color: #2E3440;
+    font-family: Calibri, sans-serif;
+    background: linear-gradient(-45deg, #ECEFF4, #88C0D0, #81A1C1, #5E81AC, #BF616A, #D08770, #EBCB8B, #E5E9F0, #ECEFF4);
+    background-size: 300% 300%;
+    animation: gradient 15s steps(1000, end) forwards infinite;
+    /* background-color: #eceff4; */
+    text-align: center;
+    margin: 0;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+body.darkmode {
+    /* background-color: #2E3440; */
+    color: #ECEFF4;
+}
+
+
+
+
+
+/* Couleur du fond */
+html {
+    
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+/* STYLISATION NAAVBAR */
+
+.header {
+    max-height: 56px;
+    background: rgba(236, 239, 244, 0.85);
+    backdrop-filter: blur(5px);
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    z-index: 90;
+}
+
+.darkmode .header{
+    background: rgba(41, 47, 58, 0.8);
+    backdrop-filter: blur(8px);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+button#actu-toggle{
+    transition: 0.4s all;
+    font-family: 'Asap', sans-serif;
+    color: #2E3440;
+    font-size: 100%;
+}
+.darkmode button#actu-toggle{
+    transition: 0.4s all;
+    color: #ECEFF4;
+}
+
+button.discord{
+    transition: 0.4s all;
+    font-family: 'Asap', sans-serif;
+    color: #2E3440;
+    font-size: 100%;
+}
+.darkmode button.discord{
+    transition: 0.4s all;
+    color: #ECEFF4;
+}
+
+button.popup-btn{
+    padding: 3px;
+    background:red; 
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: 0.4s all;
+}
+li {
+    float: left;
+}
+li a {
+    transition: 0.4s all;
+    color: #2E3440;
+    display: inline-block;
+    padding: 14px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.darkmode li a{
+    transition: 0.4s all;
+    color: #ECEFF4;
+}
+li a:hover{
+    background-color: #ffffff;
+    transition: 0.4s all;
+}
+.darkmode li a:hover{
+    transition: 0.4s all;
+    background-color: #2c2f36;
+}
+li.ld-mode, li.propos, li.herr, li.admin{
+    float: right;
+}
+li.accueil{
+    padding-left: 10%;
+}
+
+li.propos{
+    padding-right: 10%;
+}
+
+
+a img.icon{
+    transition: 0.4s all;
+    margin: 0;
+    margin-right: 5px;
+    padding: 0;
+    float: left;
+    height: 18px;
+    width: 18px;
+    filter: invert(0);
+}
+
+.darkmode a img.icon{
+    transition: 0.4s all;
+    filter: invert(1);
+}
+/* enlèvement de la margin de l'icone light/dark car inadapté */
+
+.ld-mode a{
+    height: 18px;
+}
+
+.Actu-btn a{
+    height: 18px;
+}
+
+
+
+
+#conteneur
+{
+    font-family: 'Asap', sans-serif;
+}
+
+
+
+
+/* FIN STYLISATION NAVBAR */
+
+
+
+h1{
+    border-radius: 4px;
+}
+
+#title{
+    font-family: 'Nunito', sans-serif;
+    display: inline-block;
+    margin-top: 75px;
+}
+
+
+h1.title{
+    border: 3px solid #ECEFF4;
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    max-width: 500;
+}
+.darkmode h1.title{
+    color: #ECEFF4;
+    border: 3px solid #434C5E;
+}
+
+
+
+
+
+div#content div{
+    width: 36%;
+    display: inline-block;
+}
+
+div#content{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 28px;
+    margin-bottom: 40px;
+}
+
+
+
+
+
+.leftbox h2.hid{
+    font-size: 0px;
+}
+
+.leftbox:hover h2.hid{
+    font-size: larger;
+    transition: 10s;
+    transition-timing-function: cubic-bezier(.64,.08,1,-0.27);
+}
+
+
+/* LEFTBOX */
+.leftbox{
+    transition: 0.45s all;
+    background: rgba(236, 239, 244, 0.9);
+    backdrop-filter: blur(5px);
+    margin-left: 10%;
+    padding-bottom: 15px;
+    height: min-content;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 5px 5px 15px rgb(10, 10, 10);
+}
+.darkmode .leftbox{
+    background: rgba(43, 51, 66, 0.55);
+    backdrop-filter: blur(5px);
+}
+
+.rightbox{
+    height: min-content;
+    transition: 0.45s all;
+    background: rgba(236, 239, 244, 0.9);
+    backdrop-filter: blur(5px);
+    margin-right: 10%;
+    padding-bottom: 22px;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 5px 5px 15px rgb(10, 10, 10);
+}
+.darkmode .rightbox{
+    background: rgba(43, 51, 66, 0.55);
+    backdrop-filter: blur(5px);
+}
+
+
+.leftbox:hover{
+    transition: 0.45s all;
+    background-color: #d9e2f0;
+    box-shadow: 5px 5px 25px rgb(10, 10, 10);
+}
+.darkmode .leftbox:hover{
+    background: rgba(43, 51, 66, 0.75);
+    backdrop-filter: blur(5px);
+    box-shadow: 5px 5px 25px rgb(10, 10, 10);
+}
+
+.leftbox img{
+    transition: 0.6s all;
+    filter: blur(8px);
+    padding: 0;
+    margin-top: 20px;
+    box-shadow: 0px 0px 18px black;
+    border: 2px solid #5E81AC;
+    border-radius: 5px;
+    max-width: 60%;
+}
+.leftbox img:hover{
+    transition: 0.6s all;
+    filter: blur(0px);
+    border-radius: 8px;
+    max-width: 70%;
+}
+
+.leftbox h1 p{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid gray;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.darkmode .leftbox h2{
+    color: #ECEFF4;
+}
+
+.rightbox:hover{
+    transition: 0.45s all;
+    background-color: #efd8da;
+    box-shadow: 5px 5px 25px rgb(10, 10, 10);
+}
+
+
+
+.darkmode .rightbox:hover{
+    background: rgba(43, 51, 66, 0.75);
+    backdrop-filter: blur(5px);
+    box-shadow: 5px 5px 25px rgb(10, 10, 10);
+}
+
+.rightbox h1 p{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid gray;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.rightbox img{
+    transition: 0.4s;
+    box-shadow: 0px 0px 6px black;
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 280%;
+}
+.rightbox img:hover{
+    transition: 0.2s;
+    box-shadow: 0px 0px 10px black;
+}
+
+.darkmode .rightbox img{
+    transition: 0.4s;
+    box-shadow: 0px 0px 16px black;
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 280%;
+}
+
+.slideshow-container{
+    width: 70% !important;
+}
+
+.mySlides {
+    text-align: center;
+    display: none;
+}
+
+.prev, .next {
+    border: #2c2f36 1px solid;
+    cursor: pointer;
+    display: inline-block;
+    width: auto;
+    margin: 10px;
+    padding: 8px 12px 8px 12px;
+    color: #2E3440;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.2s;
+    border-radius: 9px;
+    user-select: none;
+    background-color: #E5E9F0;
+    box-shadow: 0px 0px 4px black;
+  }
+
+.prev:hover, .next:hover {
+    border-radius: 12px;
+    color: #2E3440;
+    background-color: #ECEFF4;
+    box-shadow: 0px 0px 8px black;
+  }
+.prev{
+    margin-right: 15px;
+}
+.next{
+    margin-left: 15px;
+}
+.prev:active, .next:active{
+    transition: 0.1s;
+    color: #BF616A;
+}
+
+
+footer{
+    height: auto;
+    transition: 0.4s all;
+    background-color: #E5E9F0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.darkmode footer{
+    transition: 0.4s all;
+    background: rgba(41, 47, 58, 0.9);
+    backdrop-filter: blur(8px);
+}
+
+#footer div p a{
+    text-decoration: none; 
+    color: #2E3440;
+}
+.darkmode #footer div p a{
+    color: #ECEFF4;
+}
+
+
+
+body::-webkit-scrollbar {
+    width: 1em;
+}
+body::-webkit-scrollbar-thumb {
+    border: 5px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    border-radius: 9999px;
+    background-color: #4C566A;
+}
+
+body.darkmode::-webkit-scrollbar {
+    width: 1em;
+    background: #3B4252;
+}
+
+body.darkmode::-webkit-scrollbar-thumb{
+    border: 5px solid #3B4252;
+    background-clip: padding-box;
+    border-radius: 9999px;
+    background-color: #D8DEE9;
+}
+
+
+#popup{
+    box-shadow: 0 0 0 0px rgba(0,0,0,0.4);
+    border-radius: 8px;
+    filter: none;
+    overflow-y: scroll;
+    transition: 0.4s all;
+    padding: 10px;
+    background: rgba(236, 239, 244, 0.95);
+    backdrop-filter: blur(5px);
+    display: none;
+    transition: 0.4s all;
+    text-align: center;
+    position: fixed;
+    z-index:98;
+    top: 70px;
+    max-height: 80%;
+    left: 0;
+    right: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.darkmode #popup{
+    background: rgba(41, 47, 58, 0.9);
+    backdrop-filter: blur(8px);
+}
+
+
+#popup::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+    
+#popup::-webkit-scrollbar-track {
+    background: #f5f5f5;
+    border-radius: 10px;
+}
+    
+#popup::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #ccc;  
+}
+    
+#popup::-webkit-scrollbar-thumb:hover {
+    background: #999;  
+}
+
+h2.actu-title{
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    width: 100%;
+    padding-right: -40px;
+}
+
+button.popup-btn{
+    background: none;
+    display: flex;
+    float: right;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 4px;
+    width: 22px;
+}
+
+button.popup-btn img:hover {
+    animation: rotate 0.4s forwards;
+}
+button.popup-btn img:not(:hover) {
+    animation: unrotate 0.4s forwards;
+}
+
+@keyframes rotate{
+    from {transform: none;}
+    to {transform: rotate(180deg);}
+}
+@keyframes unrotate{
+    from {transform: none;}
+    to {transform: rotate(-180deg);}
+}
+
+button.popup-btn img{
+    filter: invert(0);
+    width: 22px;
+    transition: 0.4s all;
+}
+
+.darkmode button.popup-btn img{
+    transition: 0.4s all;
+    filter: invert(1);
+}
