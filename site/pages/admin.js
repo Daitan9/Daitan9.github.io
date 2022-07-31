@@ -17,7 +17,7 @@ $(document).ready(function () {
 
 
 
-        window.location = "https://google.com"; // go to home.html
+        window.location = "../Admin/index.html"; // go to home.html
       } else {
         $(".error").css("display", "block"); // show error msg
       }

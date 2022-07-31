@@ -86,3 +86,6 @@ let adminAccess = localStorage.getItem('adminaccess');
 if (adminAccess === 'yes') {
     document.getElementById('html').style.display = 'block';
   }
+  else {
+    window.location = "404.html"
+  }
