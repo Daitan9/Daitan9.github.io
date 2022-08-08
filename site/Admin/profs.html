@@ -119,18 +119,22 @@
         <div id="content">
             <div class="leftbox">
                 <h1>
-                   <p>Notre prof de SNT national qui cosplay Teemo</p>   
+                   <p>Image 1</p>   
                 </h1>
-                <img src="images/Herr.png" class="bg">
+                <button class="unblock-btn1 unblock-btn" onclick="show_quest1()">Dépixeliser l'image</button> <br>
+                <img src="images/-blurred.jpg" class="blurred1">
+                <img src="images/.jpg" class="correct1" style="display:none;">
                 <h1>
                     <p style="margin-top: 40px;">
-                        Mr. Herr challenger du tournoi de tennis de table, 2010
+                        Image 2
                     </p>
                 </h1>
-                <img src="images\Herr2.png" class="bg">
+                <button class="unblock-btn2 unblock-btn" onclick="">Dépixeliser l'image</button> <br>
+                <img src="images\-blurred.png" class="blurred2">
+                <img src="images\.png" class="correct2" style="display:none;">
                 <h2 class="defi">
                     <p>
-                        Je vous prend quand vous voulez au Tennis de table Mr.
+                        Petite phrase à mettre
                     </p>
                     
                 </h2>
@@ -153,16 +157,14 @@
         <footer id="footer" style="display:flex; justify-content: space-around";>
             <div>
                 <p>
-                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Fan-fiction Mr. Herr, Emma et Marie Didelon WTFF</a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Fan-fiction Louis, Emma et Marie WTFF</a>
                 </p>
             </div>
-
             <div>
                 <p>
                     Bas de page extrêmement mal codé.
                 </p>
             </div>
-
             <div >
                 <p>
                     Mais worth quand même si vous avez aimé (grand dieu je fais quoi de ma vie)
@@ -172,5 +174,54 @@
         </footer>
     
 <script src="index.js"></script>
+
+<div id="quest1" class="quests">
+    <div class="top-tx" style="text-align: center;">
+        <h2 class="actu-title">
+            Quel est le rang de Mr Herr sur Lol <button id="closing-btn" class="popup-btn"  onclick="close_quest1()" >
+                <img src="images/close-cross.png" alt="">
+            </button>
+        </h2>
+        <p class="valid1 status-quest">Yup c'est ça ! Je me demande bien comment vous avez deviné...</p>
+
+        <p class="error1 status-quest">Eh non c'est pas ça ^^</p>
+        <form class="loginbox" autocomplete="off">
+            <input placeholder="Réponse" id="answer1"></input>
+            <button id="submit1">Confirmer</button>
+        </form>
+        <div>
+            <h3>
+                Réponses acceptées :
+            </h3>
+            <li>
+                <ul>Gold 4</ul>
+                <ul>Hardstuck</ul>
+            </li>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+    //$('#username').focus();
+    
+    $("#submit1").click(function () {
+      event.preventDefault(); // prevent PageReLoad
+  
+      var ValidAnswer1 = $("#answer1").val() === "ans"; // User validate
+
+  
+      if (ValidAnswer1 === true) {
+        // if ValidEmail & ValidPassword
+        $(".valid1").css("display", "block");
+
+        $(".blurred1").css("display", "none");
+        $(".correct1").css("display", "block");
+      } else {
+        $(".error1").css("display", "block"); // show error msg
+      }
+    });
+  });
+</script>
+
 
 </body>

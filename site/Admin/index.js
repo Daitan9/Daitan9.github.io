@@ -89,3 +89,16 @@ if (adminAccess === 'yes') {
   else {
     window.location = "404.html"
   }
+
+
+  function show_quest1()
+  {
+    document.getElementById("quest1").focus();
+    document.getElementById('quest1').style.display = 'block';
+    document.getElementById('quest1').style.boxShadow = "0 0 0 10000px rgba(0,0,0,0.5)"
+  }
+  
+  function close_quest1()
+  {
+    document.getElementById('quest1').style.display = 'none'; 
+  }
