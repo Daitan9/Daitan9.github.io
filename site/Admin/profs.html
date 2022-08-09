@@ -122,8 +122,9 @@
                    <p>Image 1</p>   
                 </h1>
                 <button class="unblock-btn1 unblock-btn" onclick="show_quest1()">Dépixeliser l'image</button> <br>
-                <img src="images/-blurred.jpg" class="blurred1">
-                <img src="images/.jpg" class="correct1" style="display:none;">
+                <img src="images/collage-blurred.jpg" class="blurred1">
+                <img src="images/collage.png" class="correct1" style="display:none;"> <br>
+                <h2 style="display: none" class="ptitmsg">All my homies love Mme Didelon.</h2>
                 <h1>
                     <p style="margin-top: 40px;">
                         Image 2
@@ -221,6 +222,7 @@
         $(".blurred1").css("display", "none");
         $(".correct1").css("display", "inline");
         $(".error1").css("display", "none");
+        $(".ptitmsg").css("display", "inline");
       } else {
         $(".error1").css("display", "block");
         $(".valid1").css("display", "none");

@@ -341,11 +341,11 @@ div#content div{
     padding-right: 15px;
 }
 
-.leftbox h2{
+.leftbox h2.defi{
     font-size: 0px;
 }
 
-.leftbox:hover h2{
+.leftbox:hover h2.defi{
     font-size: larger;
     transition: 10s;
     transition-timing-function: cubic-bezier(.64,.08,1,-0.27);
