@@ -75,7 +75,7 @@ html {
     backdrop-filter: blur(8px);
 }
 
-ul {
+ul#conteneur {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -590,6 +590,37 @@ button.unblock-btn{
     color: #2E3440;
   }
   
-  .status-quest {
+p.status-quest {
+    width: fit-content;
     display: none;
-  }
+    border-radius: 8px;
+    margin: auto;
+}
+div.accepted1{
+    display: none;
+}
+
+.status-error{
+    color: #CF1827;
+    padding: 5px;border: 2px #CF1827 solid;
+    font-family: 'Asap', sans-serif;
+}
+.status-valid{
+    color: #32CD32;
+    padding: 5px;border: 2px #32CD32 solid;
+    font-family: 'Asap', sans-serif;
+}
+
+form.loginbox{
+    margin-top: 16px;
+}
+
+input#answer1{
+    font-family: 'Asap', sans-serif;
+    border-radius: 4px;
+}
+button#submit1{
+    padding: 3px;
+    border-radius: 3px;
+    font-family: 'Asap', sans-serif;
+}

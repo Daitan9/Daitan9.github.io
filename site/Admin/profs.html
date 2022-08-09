@@ -176,27 +176,29 @@
 <script src="index.js"></script>
 
 <div id="quest1" class="quests">
-    <div class="top-tx" style="text-align: center;">
+    <div class="top-tx" style="text-align: center;text-align: center;">
         <h2 class="actu-title">
-            Quel est le rang de Mr Herr sur Lol <button id="closing-btn" class="popup-btn"  onclick="close_quest1()" >
+            Quel est le rang de Mr Herr sur Lol ? (●･̆⍛･̆●)<button id="closing-btn" class="popup-btn"  onclick="close_quest1()" >
                 <img src="images/close-cross.png" alt="">
             </button>
         </h2>
-        <p class="valid1 status-quest">Yup c'est ça ! Je me demande bien comment vous avez deviné...</p>
+        <p class="valid1 status-quest status-valid">Yup c'est ça ! Je me demande bien comment vous avez deviné...</p>
 
-        <p class="error1 status-quest">Eh non c'est pas ça ^^</p>
+        <p class="error1 status-quest status-error">Eh non c'est pas ça ^^</p>
         <form class="loginbox" autocomplete="off">
             <input placeholder="Réponse" id="answer1"></input>
             <button id="submit1">Confirmer</button>
         </form>
-        <div>
-            <h3>
+        <div class="accepted1">
+            <h3 style="padding: 8px;padding-bottom: 12px;">
                 Réponses acceptées :
             </h3>
-            <li>
-                <ul>Gold 4</ul>
-                <ul>Hardstuck</ul>
-            </li>
+            <ul class="answers1">
+                <li>Gold</li> <br>
+                <li>Hardstuck</li> <br>
+                <li>Flemmard</li> <br>
+                <li>Mme Didelon a surement trois fois son level</li>
+            </ul>
         </div>
     </div>
 </div>
@@ -213,11 +215,15 @@
       if (ValidAnswer1 === true) {
         // if ValidEmail & ValidPassword
         $(".valid1").css("display", "block");
+        $(".accepted1").css("display", "inline-block");
+
 
         $(".blurred1").css("display", "none");
-        $(".correct1").css("display", "block");
+        $(".correct1").css("display", "inline");
+        $(".error1").css("display", "none");
       } else {
-        $(".error1").css("display", "block"); // show error msg
+        $(".error1").css("display", "block");
+        $(".valid1").css("display", "none");
       }
     });
   });

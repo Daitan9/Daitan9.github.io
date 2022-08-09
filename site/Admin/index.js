@@ -100,5 +100,7 @@ if (adminAccess === 'yes') {
   
   function close_quest1()
   {
-    document.getElementById('quest1').style.display = 'none'; 
+    document.getElementById('quest1').style.display = 'none';
+    document.getElementsByClassName('error1').style.display = 'none';
+    document.getElementsByClassName('valid1').style.display = 'none';
   }
