@@ -79,7 +79,7 @@
                     </a>
                 </li>
                 <li class="admin">
-                    <a href="#">Connecté !
+                    <a href="../index.html">Déconnexion
                         <img src="images/keyy.png" alt="" class="icon">
                     </a>
                 </li>
@@ -119,7 +119,7 @@
         <div id="content">
             <div class="leftbox">
                 <h1>
-                   <p>Image 1</p>   
+                   <p>Farewell la Seconde 13</p>   
                 </h1>
                 <button class="unblock-btn1 unblock-btn" onclick="show_quest1()">Dépixeliser l'image</button> <br>
                 <img src="images/collage-blurred.jpg" class="blurred1">
@@ -127,25 +127,24 @@
                 <h2 style="display: none" class="ptitmsg">All my homies love Mme Didelon.</h2>
                 <h1>
                     <p style="margin-top: 40px;">
-                        Image 2
+                        Marie Einstein, wait what
                     </p>
                 </h1>
-                <button class="unblock-btn2 unblock-btn" onclick="">Dépixeliser l'image</button> <br>
-                <img src="images\-blurred.png" class="blurred2">
-                <img src="images\.png" class="correct2" style="display:none;">
-                <h2 class="defi">
-                    <p>
-                        Petite phrase à mettre
-                    </p>
-                    
-                </h2>
+                <button class="unblock-btn2 unblock-btn" onclick="show_quest2()">Dépixeliser l'image</button> <br>
+                <img src="images\ael-blurred.jpg" class="blurred2">
+                <img src="images\ael.jpg" class="correct2" style="display:none;"> <br>
+                <h2 style="display: none;margin-left: 10px;margin-right: 10px;" class="ptitmsg2">Mme Didelon a un effet positif sur ce que je fais de mon temps libre ? <br> A méditer. <br> Plus je regarde la photo moins j'ai envie de la voir.</h2>
+                </h2> <br>
+                <button onclick="" class="btnpourrepixeliser" id="btnpourrepixeliser">
+                    Voici un bouton pour remettre la pixelisation, de rien c'était gratuit.
+                </button>
             </div>
 
             <div class="rightbox">
                 <h1>
                     <p>Voici Mme Didelon Einstein</p>
                 </h1>
-                <img src="images/ael.jpg" alt="">
+                <img src="images/SGbase2.jpg" alt="">
                 <h2 class="defi">
                     En vrai j'ai un peu honte, plus je regarde cette photo, moins j'ai envie de la voir, je pense que ça vous fait la même mdr
                 </h2>
@@ -203,6 +202,35 @@
         </div>
     </div>
 </div>
+
+<div id="quest2" class="quests">
+    <div class="top-tx" style="text-align: center;text-align: center;">
+        <h2 class="actu-title">
+            Question<button id="closing-btn" class="popup-btn"  onclick="close_quest2()" >
+                <img src="images/close-cross.png" alt="">
+            </button>
+        </h2>
+        <p class="valid2 status-quest status-valid">Yup c'est ça ! Je me demande bien comment vous avez deviné...</p>
+
+        <p class="error2 status-quest status-error">Eh non c'est pas ça ^^</p>
+        <form class="loginbox" autocomplete="off">
+            <input placeholder="Réponse" id="answer2" class="answer-input"></input>
+            <button id="submit2" class="submiting">Confirmer</button>
+        </form>
+        <div class="accepted2">
+            <h3 style="padding: 8px;padding-bottom: 12px;">
+                Réponses acceptées :
+            </h3>
+            <ul class="answers2">
+                <li>re p1 </li> <br>
+                <li>rep 2 </li> <br>
+                <li>rep 3</li> <br>
+                <li>blagounette</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
 <script>
     $(document).ready(function () {
     //$('#username').focus();
@@ -231,5 +259,46 @@
   });
 </script>
 
+<script>
+    $(document).ready(function () {
+    //$('#username').focus();
+    
+    $("#submit2").click(function () {
+      event.preventDefault(); // prevent PageReLoad
+  
+      var ValidAnswer1 = $("#answer2").val() === "ans"; // User validate
+
+  
+      if (ValidAnswer1 === true) {
+        // if ValidEmail & ValidPassword
+        $(".valid2").css("display", "block");
+        $(".accepted2").css("display", "inline-block");
+
+
+        $(".blurred2").css("display", "none");
+        $(".correct2").css("display", "inline");
+        $(".error2").css("display", "none");
+        $(".ptitmsg2").css("display", "inline");
+        $(".btnpourrepixeliser").css("display", "inline");
+      } else {
+        $(".error2").css("display", "block");
+        $(".valid2").css("display", "none");
+      }
+    });
+  });
+</script>
+
+<script>
+    $(document).ready(function () {
+    //$('#username').focus();
+    
+    $("#btnpourrepixeliser").click(function () {
+      event.preventDefault(); // prevent PageReLoad
+  
+      $(".blurred2").css("display", "inline");
+      $(".correct2").css("display", "none");
+    });
+  });
+</script>
 
 </body>

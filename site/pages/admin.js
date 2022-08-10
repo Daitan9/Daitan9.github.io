@@ -23,3 +23,12 @@ $(document).ready(function () {
       }
     });
   });
+
+  let adminAccess = localStorage.getItem('adminaccess'); 
+  
+  if (adminAccess === 'yes') {
+    window.location = '../Admin/index.html';
+  }
+  else {
+    
+  }

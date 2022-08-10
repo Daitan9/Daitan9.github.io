@@ -104,3 +104,17 @@ if (adminAccess === 'yes') {
     document.getElementsByClassName('error1').style.display = 'none';
     document.getElementsByClassName('valid1').style.display = 'none';
   }
+
+  function show_quest2()
+  {
+    document.getElementById("quest2").focus();
+    document.getElementById('quest2').style.display = 'block';
+    document.getElementById('quest2').style.boxShadow = "0 0 0 10000px rgba(0,0,0,0.5)"
+  }
+  
+  function close_quest2()
+  {
+    document.getElementById('quest2').style.display = 'none';
+    document.getElementsByClassName('error2').style.display = 'none';
+    document.getElementsByClassName('valid2').style.display = 'none';
+  }
