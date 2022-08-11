@@ -128,6 +128,9 @@ if (adminAccess === 'yes') {
     else {
       document.getElementById("SG1").style.display="inline";
       document.getElementById("SG2").style.display="none";
+      var audio = document.getElementById("audio");
+      audio.pause();
+      audio.currentTime = 0;
     }
     var audio = document.getElementById("audio");
     audio.play();
