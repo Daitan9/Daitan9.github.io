@@ -118,3 +118,17 @@ if (adminAccess === 'yes') {
     document.getElementsByClassName('error2').style.display = 'none';
     document.getElementsByClassName('valid2').style.display = 'none';
   }
+
+  function change_image()
+  {
+    if (document.getElementById("SG1").style.display === "inline") {
+      document.getElementById("SG1").style.display="none";
+      document.getElementById("SG2").style.display="inline";
+    } 
+    else {
+      document.getElementById("SG1").style.display="inline";
+      document.getElementById("SG2").style.display="none";
+    }
+    var audio = document.getElementById("audio");
+    audio.play();
+  }

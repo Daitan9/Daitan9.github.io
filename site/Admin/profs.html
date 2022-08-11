@@ -144,7 +144,10 @@
                 <h1>
                     <p>Voici Mme Didelon Einstein</p>
                 </h1>
-                <img src="images/SGbase2.jpg" alt="">
+                <button class=".labo" onclick="change_image()">
+                    <img src="images/SGbase2.jpg" alt="" id="SG1" style="display: inline;">
+                    <img src="images/SGps2.jpg" alt="" style="display: none;" id="SG2" >
+                </button>
                 <h2 class="defi">
                     En vrai j'ai un peu honte, plus je regarde cette photo, moins j'ai envie de la voir, je pense que ça vous fait la même mdr
                 </h2>
@@ -300,5 +303,15 @@
     });
   });
 </script>
+
+<script>
+    $(document).ready(function () {
+    //$('#username').focus();
+    
+    $(".labo").click(change_image());
+  });
+</script>
+
+<audio src="./tuturu.mp3" id="audio"></audio>
 
 </body>

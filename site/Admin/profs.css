@@ -307,8 +307,8 @@ div#content div{
     box-shadow: 0px 0px 18px black;
     border: 2px solid #5E81AC;
     border-radius: 5px;
-    max-width: 70%;
-    width: 70%;
+    width: 88%;
+    max-width: 88%;
 }
 
 .leftbox img:hover{
@@ -317,12 +317,11 @@ div#content div{
     width: 85%;
     max-width: 85%;
 }
-.rightbox img:hover{
+/* .rightbox img:hover{
     transition: 0.6s all;
     border-radius: 8px;
-    width: 80%;
-    max-width: 85%;
-}
+
+} */
 
 .leftbox h1 p{
     padding-top: 15px;
