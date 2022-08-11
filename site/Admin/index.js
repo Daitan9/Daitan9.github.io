@@ -121,17 +121,17 @@ if (adminAccess === 'yes') {
 
   function change_image()
   {
+    var audio = document.getElementById("audio");
+
     if (document.getElementById("SG1").style.display === "inline") {
       document.getElementById("SG1").style.display="none";
       document.getElementById("SG2").style.display="inline";
+      audio.play();
     } 
     else {
       document.getElementById("SG1").style.display="inline";
       document.getElementById("SG2").style.display="none";
-      var audio = document.getElementById("audio");
       audio.pause();
       audio.currentTime = 0;
     }
-    var audio = document.getElementById("audio");
-    audio.play();
   }
