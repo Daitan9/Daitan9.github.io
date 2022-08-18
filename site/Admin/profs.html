@@ -117,7 +117,7 @@
 
 
         <div id="content">
-            <div class="leftbox">
+            <div class="leftbox box">
                 <h1>
                    <p>Farewell la Seconde 13</p>   
                 </h1>
@@ -140,15 +140,23 @@
                 </button>
             </div>
 
-            <div class="rightbox">
+            <div class="rightbox box">
                 <h1>
                     <p>Voici Mme Didelon Einstein</p>
                 </h1>
-                <button class=".labo" onclick="change_image()">
+                <!-- <button class=".labo" onclick="change_image()">
                     <img src="images/SGbase2.jpg" alt="" id="SG1" style="display: inline;">
                     <img src="images/SGps2.jpg" alt="" style="display: none;" id="SG2" >
                     <audio src="./tuturu.mp3" id="audio"></audio>
-                </button>
+                </button> -->
+
+                <div class="compare">
+                    <div class="before">
+                        <div class="after"></div>
+                    </div>
+                    <input type="range" min="0" max="1000" step="10" id="compare-ip"> 
+                </div>
+
                 <h2 class="defi">
                     En vrai j'ai un peu honte, plus je regarde cette photo, moins j'ai envie de la voir, je pense que ça vous fait la même mdr
                 </h2>
