@@ -594,6 +594,7 @@ p.status-quest {
     display: none;
     border-radius: 8px;
     margin: auto;
+    margin-top: 16px;
 }
 div.accepted1, div.accepted2{
     display: none;
