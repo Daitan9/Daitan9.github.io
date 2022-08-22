@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="fr" id="html">
+<html lang="fr" class="html" id="html">
 
 <head>
     <title>C'est même plus des profs à ce point</title>
@@ -37,7 +37,7 @@
                     <a href="profs.html">
                         <img src="images\Profs.png" style="vertical-align: middle;" class="icon">
                         <span>
-                            Nos chers profs
+                            Coin sombre
                         </span>
                     </a>
                 </li>
@@ -119,7 +119,7 @@
         <div id="content">
             <div class="leftbox box">
                 <h1>
-                   <p>Farewell la Seconde 13</p>   
+                   <p>Adieu la Seconde 13</p>   
                 </h1>
                 <button class="unblock-btn1 unblock-btn" onclick="show_quest1()">Dépixeliser l'image</button> <br>
                 <img src="images/collage-blurred.jpg" class="blurred1">
@@ -179,7 +179,6 @@
             
         </footer>
     
-<script src="index.js"></script>
 <script src="slider.js"></script>
 
 <div id="quest1" class="quests">
@@ -189,12 +188,13 @@
                 <img src="images/close-cross.png" alt="">
             </button>
         </h2>
+        <h3>Plusieurs réponses sont acceptables, faites preuve de sincérité et d'imagination..</h3>
         <p class="valid1 status-quest status-valid">Yup c'est ça ! Je me demande bien comment vous avez deviné...</p>
 
         <p class="error1 status-quest status-error">Eh non c'est pas ça ^^</p>
         <form class="loginbox" autocomplete="off">
-            <input placeholder="Réponse" id="answer1"></input>
-            <button id="submit1">Confirmer</button>
+            <input placeholder="Réponse" id="answer1" class="answer-input placeholder"></input>
+            <button id="submit1" class="submiting">Confirmer</button>
         </form>
         <div class="accepted1">
             <h3 style="padding: 8px;padding-bottom: 12px;">
@@ -217,11 +217,12 @@
                 <img src="images/close-cross.png" alt="">
             </button>
         </h2>
+        <h3>Plusieurs réponses sont acceptables, faites preuve de sincérité et d'imagination..</h3>
         <p class="valid2 status-quest status-valid">Yup c'est ça ! Je me demande bien comment vous avez deviné...</p>
 
         <p class="error2 status-quest status-error">Eh non c'est pas ça ^^</p>
         <form class="loginbox" autocomplete="off">
-            <input placeholder="Réponse" id="answer2" class="answer-input"></input>
+            <input placeholder="Réponse" id="answer2" class="answer-input placeholder" ></input>
             <button id="submit2" class="submiting">Confirmer</button>
         </form>
         <div class="accepted2">
@@ -245,10 +246,12 @@
     $("#submit1").click(function () {
       event.preventDefault(); // prevent PageReLoad
   
-      var ValidAnswer1 = $("#answer1").val() === "ans"; // User validate
-
+      var ValidAnswer1 = $("#answer1").val() === "Gold"; // User validate
+      var ValidAnswer2 = $("#answer1").val() === "Hardstuck";
+      var ValidAnswer3 = $("#answer1").val() === "Flemmard";
+      var ValidAnswer4 = $("#answer1").val() === "Mme Didelon a surement trois fois son level";
   
-      if (ValidAnswer1 === true) {
+      if (ValidAnswer1 === true || ValidAnswer2 === true || ValidAnswer3 === true || ValidAnswer4 === true) {
         // if ValidEmail & ValidPassword
         $(".valid1").css("display", "block");
         $(".accepted1").css("display", "inline-block");
@@ -315,7 +318,7 @@
     $(".labo").click(change_image());
   });
 </script>
-
+<script src="index.js"></script>
 
 
 </body>

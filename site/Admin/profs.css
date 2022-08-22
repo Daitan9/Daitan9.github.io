@@ -7,6 +7,7 @@
     box-sizing: border-box;
 }
 html{
+    display: none;
     height: 100%;
     margin: 0;
     filter: none;
@@ -616,12 +617,15 @@ form.loginbox{
 input.answer-input{
     font-family: 'Asap', sans-serif;
     border-radius: 4px;
+    padding: 4px;
+    margin-right: 15px;
 }
 button.submiting, button#btnpourrepixeliser{
     margin-top: 6px;
     padding: 3px;
-    border-radius: 3px;
+    border-radius: 4px;
     font-family: 'Asap', sans-serif;
+    background: transparent;
 }
 button.btnpourrepixeliser{
     display: none;
