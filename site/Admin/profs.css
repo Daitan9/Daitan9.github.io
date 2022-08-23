@@ -524,8 +524,13 @@ button.unblock-btn{
     cursor: pointer;
     padding: 5px;
     margin-top: 10px;
+    background: transparent;
+    transition: 0.3s all;
 }
-
+button.unblock-btn:hover{
+    padding: 8px;
+    transition: 0.3s all;
+}
 
 .form {
     text-align: center;
@@ -627,7 +632,16 @@ button.submiting, button#btnpourrepixeliser{
     border-radius: 4px;
     font-family: 'Asap', sans-serif;
     background: transparent;
+    transition: 0.2s all;
 }
+button.submiting:hover{
+    transition: 0.2s all;
+    padding: 5px;
+}
+button.submiting:active{
+    border-width: 3px;
+}
+
 button.btnpourrepixeliser{
     display: none;
 }

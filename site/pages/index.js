@@ -52,7 +52,7 @@ function close_popup()
 
 function Discord() {
 
-  navigator.clipboard.writeText("Daitan#6606");
+  navigator.clipboard.writeText("http://86.218.59.135:");
   
-  alert("Pseudo Discord copié !");
+  alert("Unknown text copied.");
 }
