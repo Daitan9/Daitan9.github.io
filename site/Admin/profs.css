@@ -206,7 +206,7 @@ h1.title{
     padding: 20px;
     border-radius: 20px;
     color: white;
-    max-width: 500px;
+    max-width: 800px;
 }
 .darkmode h1.title{
     color: #ECEFF4;
@@ -527,6 +527,11 @@ button.unblock-btn{
     background: transparent;
     transition: 0.3s all;
 }
+
+.darkmode button.unblock-btn{
+    border: 1px solid #ECEFF4;
+    color: #ECEFF4;
+}
 button.unblock-btn:hover{
     padding: 8px;
     transition: 0.3s all;
@@ -634,6 +639,11 @@ button.submiting, button#btnpourrepixeliser{
     background: transparent;
     transition: 0.2s all;
 }
+.darkmode button.submiting{
+    border: 1px solid #ECEFF4;
+    color: #ECEFF4;
+}
+
 button.submiting:hover{
     transition: 0.2s all;
     padding: 5px;

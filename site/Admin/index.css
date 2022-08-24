@@ -215,7 +215,7 @@ h1.title{
 
 
 
-div#content div{
+div.box, div.slideshow-container, div.mySlides{
     width: 36%;
     display: inline-block;
 }
