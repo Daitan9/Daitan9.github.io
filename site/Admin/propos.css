@@ -16,7 +16,7 @@ body /* mise en place de la police et de la couleur du fond de page*/
     width: 100%;
     color: #2E3440;
     font-family: Calibri, sans-serif;
-    background: linear-gradient(-45deg, #ECEFF4, #88C0D0, #81A1C1, #5E81AC, #BF616A, #D08770, #EBCB8B, #E5E9F0, #ECEFF4);
+    background: linear-gradient(-45deg, #FF0000, #FFA07A, #FA8072, #E9967A, #BF616A, #F08080, #CD5C5C, #DC143C, #B22222);
     background-size: 300% 300%;
     animation: gradient 15s steps(1000, end) forwards infinite;
     /* background-image: url("l-backg.png");
