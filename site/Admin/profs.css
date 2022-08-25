@@ -655,3 +655,43 @@ button.submiting:active{
 button.btnpourrepixeliser{
     display: none;
 }
+
+
+.mySlides {
+    text-align: center;
+    display: none;
+}
+
+.prev, .next {
+    border: #2c2f36 1px solid;
+    cursor: pointer;
+    display: inline-block;
+    width: auto;
+    margin: 10px;
+    padding: 8px 12px 8px 12px;
+    color: #2E3440;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.2s;
+    border-radius: 9px;
+    user-select: none;
+    background-color: #E5E9F0;
+    box-shadow: 0px 0px 4px black;
+  }
+
+.prev:hover, .next:hover {
+    border-radius: 12px;
+    color: #2E3440;
+    background-color: #ECEFF4;
+    box-shadow: 0px 0px 8px black;
+  }
+.prev{
+    margin-right: 15px;
+}
+.next{
+    margin-left: 15px;
+}
+.prev:active, .next:active{
+    transition: 0.1s;
+    color: #BF616A;
+}
