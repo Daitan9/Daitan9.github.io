@@ -639,11 +639,13 @@ button.submiting, button#btnpourrepixeliser{
     background: transparent;
     transition: 0.2s all;
 }
-.darkmode button.submiting{
+.darkmode button.submiting, .darkmode button#btnpourrepixeliser{
     border: 1px solid #ECEFF4;
     color: #ECEFF4;
 }
-
+button#btnpourrepixeliser{
+    padding: 6px;
+}
 button.submiting:hover{
     transition: 0.2s all;
     padding: 5px;

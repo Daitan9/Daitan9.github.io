@@ -6,10 +6,10 @@ $(document).ready(function () {
     $("#submit").click(function () {
       event.preventDefault(); // prevent PageReLoad
   
-      var ValidEmail = $("#username").val() === "idlaviv"; // User validate
-      var ValidPassword = $("#password").val() === "3"; // Password validate
+      var ValidAns = $("#username").val() === "Infiniment plus faible";
+      var ValidAns2 = $("#username").val() === "infiniment plus faible"; // User validate
   
-      if (ValidEmail === true && ValidPassword === true) {
+      if (ValidAns === true || ValidAns2 === true) {
         // if ValidEmail & ValidPassword
         $(".valid").css("display", "block");
 
