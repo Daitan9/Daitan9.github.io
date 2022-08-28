@@ -6,8 +6,8 @@ $(document).ready(function () {
     $("#submit").click(function () {
       event.preventDefault(); // prevent PageReLoad
   
-      var ValidAns = $("#username").val() === "Infiniment plus faible";
-      var ValidAns2 = $("#username").val() === "infiniment plus faible"; // User validate
+      var ValidAns = $("#username").val() === "Infiniment plus faible"; //Fuck you Smartass, c'était pas comme ça qu'il fallait deviner
+      var ValidAns2 = $("#username").val() === "infiniment plus faible"; //Fuck you Smartass, c'était pas comme ça qu'il fallait deviner
   
       if (ValidAns === true || ValidAns2 === true) {
         // if ValidEmail & ValidPassword
