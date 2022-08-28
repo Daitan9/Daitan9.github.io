@@ -51,12 +51,6 @@ function close_popup()
   document.getElementById('popup').style.display = 'none'; 
 }
 
-function Discord() {
-
-  navigator.clipboard.writeText("86.218.59.135:");
-  
-  alert("Unknown text copied.");
-}
 
 //Slideshow
 let slideIndex = 1;
