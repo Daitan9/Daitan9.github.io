@@ -53,7 +53,7 @@ function close_popup()
 
 function Discord() {
 
-  navigator.clipboard.writeText("http://86.218.59.135:");
+  navigator.clipboard.writeText("http://86.218.59.135:date-paragraphe3");
   
   alert("Unknown text copied.");
 }

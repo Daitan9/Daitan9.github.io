@@ -8,16 +8,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
-  <script src="script.js"></script>
 </head>
 <body>
-
+<!-- 
   <h2 id="1">Bienvenue user@{24_601}</h2>
 
-  <button onclick="typewriter()" id="button" class="button">Démarrer</button>
+  <button onclick="typewriter()" id="button" class="button">Démarrer</button> -->
 
-  <div>
+  <!-- <div>
     <h3 id="tw1"></h3>
+  </div> -->
+
+  <div id="content">
+    Assassination.Classroom.S²éE&ç.mp4 - &ç:²é
   </div>
 
   <button onclick="document.location.href = 'index.html';" class="button" id="accueil">Retourner à l'accueil</button>
@@ -25,44 +28,44 @@
 </body>
 
 <script>
-  // set up text to print, each item in array is new line
-var aText = new Array(
-"Initialisation ...", 
-"Etat Systeme : Probleme > [Irrésolu] | 'Reponse' = tnaifitnedi", "",
-"{Probleme}--> J'ai créé les quatre saisons, mais je ne suis ni la nature, ni la Terre. ", "",
-"Qui suis-je ?", 
-);
-var iSpeed = 120; // time delay of print out
-var iIndex = 0; // start printing array at this posision
-var iArrLength = aText[0].length; // the length of the text array
-var iScrollAt = 20; // start scrolling up at this many lines
+
+// var aText = new Array(
+// "Initialisation ...", 
+// "Etat Systeme : Probleme > [Irrésolu] | 'Reponse' = tnaifitnedi", "",
+// "{Probleme}--> J'ai créé les quatre saisons, mais je ne suis ni la nature, ni la Terre. ", "",
+// "Qui suis-je ?", 
+// );
+// var iSpeed = 120;
+// var iIndex = 0; 
+// var iArrLength = aText[0].length;
+// var iScrollAt = 20;
  
-var iTextPos = 0; // initialise text position
-var sContents = ''; // initialise contents variable
-var iRow; // initialise current row
+// var iTextPos = 0;
+// var sContents = '';
+// var iRow;
  
-function typewriter()
-{
- document.getElementById('button').style.display = 'none';
- sContents =  ' ';
- iRow = Math.max(0, iIndex-iScrollAt);
- var destination = document.getElementById("tw1");
+// function typewriter()
+// {
+//  document.getElementById('button').style.display = 'none';
+//  sContents =  ' ';
+//  iRow = Math.max(0, iIndex-iScrollAt);
+//  var destination = document.getElementById("tw1");
  
- while ( iRow < iIndex ) {
-  sContents += aText[iRow++] + '<br />';
- }
- destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
- if ( iTextPos++ == iArrLength ) {
-  iTextPos = 0;
-  iIndex++;
-  if ( iIndex != aText.length ) {
-   iArrLength = aText[iIndex].length;
-   setTimeout("typewriter()", 500);
-  }
- } else {
-  setTimeout("typewriter()", 70);
- }
-}
+//  while ( iRow < iIndex ) {
+//   sContents += aText[iRow++] + '<br />';
+//  }
+//  destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+//  if ( iTextPos++ == iArrLength ) {
+//   iTextPos = 0;
+//   iIndex++;
+//   if ( iIndex != aText.length ) {
+//    iArrLength = aText[iIndex].length;
+//    setTimeout("typewriter()", 500);
+//   }
+//  } else {
+//   setTimeout("typewriter()", 70);
+//  }
+// }
 
 </script>
 
